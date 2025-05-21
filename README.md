@@ -22,6 +22,24 @@ Streamlit UI for live video feed monitoring and user interaction.
 
 🎛️ Interactive dashboard built with Streamlit
 
+
+
+📧 Email Alerts:
+Email alerts are sent when fire is detected. Configure the following fields in config.py:
+
+
+SENDER_EMAIL = "your_email@gmail.com"
+SENDER_PASSWORD = "your_app_password"
+RECEIVER_EMAIL = "recipient_email@gmail.com"
+Note: Use app passwords or environment variables in production.
+
+⚙️ How to Run
+-After modiying the email alerts 
+to run the code 
+
+"streamlit run app.py"
+
+
 📊 Performance Metrics
 Metric	Value
 Precision	93.1%
@@ -61,3 +79,7 @@ Expansion to other disaster types (flood, landslide)
 YOLOv11 for object detection
 
 Trained on the FLAME Dataset (Fire and Smoke imagery)
+
+Author 
+S.AVINASH
+CONTACT EMAIL : sudhimallaavinash@gmail.com
