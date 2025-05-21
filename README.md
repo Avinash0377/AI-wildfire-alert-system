@@ -45,6 +45,7 @@ Hardware: NVIDIA GTX 1070+, 16GB RAM, HD Webcam
 
 Dataset: FLAME Dataset from RoboFlow (1,322 images)
 
+
 📈 Future Enhancements
 Integration with satellite or UAV imagery
 
