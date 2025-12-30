@@ -1,4 +1,4 @@
-# 🔥 AI Wildfire Alert System
+# AI Wildfire Alert System
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![YOLOv11](https://img.shields.io/badge/YOLO-v11-orange.svg)](https://docs.ultralytics.com/)
@@ -7,24 +7,22 @@
 
 An intelligent real-time wildfire detection system powered by **YOLOv11 Segmentation** with automatic email alerts. This system uses computer vision and deep learning to detect fires in video streams or uploaded footage, providing instant notifications to help prevent disasters.
 
-![Fire Detection Demo](https://img.shields.io/badge/Status-Active-brightgreen)
+---
+
+## Features
+
+- **Real-Time Fire Detection**: Uses YOLOv11 segmentation model for accurate fire detection
+- **Multiple Input Sources**: Support for live webcam feed and video file uploads (MP4, AVI, MKV)
+- **Automatic Email Alerts**: Sends instant email notifications with fire detection snapshots
+- **Location Tracking**: Automatically fetches and displays geographic location
+- **Detection Dashboard**: Interactive Streamlit dashboard with statistics and detection logs
+- **Timestamp Overlay**: Real-time timestamp on live detection feed
+- **Object Tracking**: Persistent tracking of detected fire instances
+- **Detection Statistics**: Tracks total fire detections and maintains detailed logs
 
 ---
 
-## 🌟 Features
-
-- **🎯 Real-Time Fire Detection**: Uses YOLOv11 segmentation model for accurate fire detection
-- **📹 Multiple Input Sources**: Support for live webcam feed and video file uploads (MP4, AVI, MKV)
-- **📧 Automatic Email Alerts**: Sends instant email notifications with fire detection snapshots
-- **📍 Location Tracking**: Automatically fetches and displays geographic location
-- **📊 Detection Dashboard**: Interactive Streamlit dashboard with statistics and detection logs
-- **⏱️ Timestamp Overlay**: Real-time timestamp on live detection feed
-- **🔄 Object Tracking**: Persistent tracking of detected fire instances
-- **📈 Detection Statistics**: Tracks total fire detections and maintains detailed logs
-
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -37,7 +35,7 @@ An intelligent real-time wildfire detection system powered by **YOLOv11 Segmenta
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8 or higher
 - Webcam (for live detection)
@@ -46,7 +44,7 @@ An intelligent real-time wildfire detection system powered by **YOLOv11 Segmenta
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the Repository
 
@@ -87,7 +85,7 @@ receiver_email = 'recipient@gmail.com'  # Alert recipient email
 
 ---
 
-## 💻 Usage
+## Usage
 
 ### Run the Application
 
@@ -103,7 +101,7 @@ python -m streamlit run main.py
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 AI-wildfire-alert-system/
@@ -120,7 +118,7 @@ AI-wildfire-alert-system/
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Email Alert Settings
 
@@ -142,22 +140,17 @@ AI-wildfire-alert-system/
 
 ---
 
-## 📸 Screenshots
+## How It Works
 
-### Detection Dashboard
-The main interface provides:
-- Real-time video feed with fire detection overlays
-- Detection statistics showing total fires detected
-- Detailed detection log with timestamps and locations
-
-### Email Alert
-When fire is detected, an email is automatically sent containing:
-- Subject: "Fire Detected"
-- Attachment: Snapshot of the detected fire
+1. **Video Input**: The system accepts either live webcam feed or uploaded video files
+2. **Frame Processing**: Each frame is resized and processed through the YOLOv11 model
+3. **Fire Detection**: The model identifies and segments fire regions in the frame
+4. **Alert Generation**: When fire is detected, an email alert is automatically sent with a snapshot
+5. **Logging**: All detections are logged with timestamps and location data
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
@@ -168,9 +161,9 @@ When fire is detected, an email is automatically sent containing:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome. Please follow these steps:
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -180,35 +173,23 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Sudimalla Avinash**
 
-- 📧 Email: [sudhimallaavinash@gmail.com](mailto:sudhimallaavinash@gmail.com)
-- 🐙 GitHub: [@Avinash0377](https://github.com/Avinash0377)
+- Email: [sudhimallaavinash@gmail.com](mailto:sudhimallaavinash@gmail.com)
+- GitHub: [Avinash0377](https://github.com/Avinash0377)
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Ultralytics](https://ultralytics.com/) for the YOLOv11 model
-- [Streamlit](https://streamlit.io/) for the amazing dashboard framework
+- [Streamlit](https://streamlit.io/) for the dashboard framework
 - [OpenCV](https://opencv.org/) for computer vision capabilities
-
----
-
-## ⭐ Support
-
-If you found this project helpful, please give it a ⭐ on GitHub!
-
----
-
-<p align="center">
-  Made with ❤️ for wildfire prevention and safety
-</p>
