@@ -17,9 +17,6 @@ __pycache__/
 # Streamlit secrets
 .streamlit/secrets.toml
 
-# Model weights (large files)
-*.pt
-
 # Temp files
 *.tmp
 *.temp
